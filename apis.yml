@@ -1,8 +1,23 @@
 aid: gmr
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/gmr.png
 name: GMR
-description: 'GMR is a company surfaced as a portfolio company of multicoin-capital and added to the API
-  Evangelist network as a stub for enrichment. Sector: crypto-web3. This profile is a lead awaiting the
-  enrichment pipeline.'
+description: 'GMR (General Mining Research) is a crypto and Web3 company backed by Multicoin Capital and
+  tracked in the API Evangelist network. Its public presence is a single-page web application at gmr.xyz
+  identifying it as "General Mining Research" with a general contact at info@gmr.xyz. As of this enrichment
+  pass no public developer portal, API documentation, OpenAPI definition, well-known discovery surface,
+  or SDK/CLI could be found — the only machine-verifiable signal is the domain''s TLS/DNS security posture.
+  This profile remains a lead awaiting a published API or developer surface to enrich further.'
 url: https://raw.githubusercontent.com/api-evangelist/gmr/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +27,13 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Crypto Web3
+- Mining
+- Research
+- Blockchain
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +41,14 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/gmr-domain-security.yml
 - type: Website
   url: https://gmr.xyz
+- type: Email
+  url: mailto:info@gmr.xyz
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
